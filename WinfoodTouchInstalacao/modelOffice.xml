@@ -1,0 +1,2829 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+modelOffice
+</name>
+</assembly>
+<members>
+<member name="T:modelOffice.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:modelOffice.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:modelOffice.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:modelOffice.AgendaTelefonicaModel.AlteraAgendaTelefonica">
+ <summary>
+ Propriedade para verificar se agenda pode ser alterada/excluida.
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AgendaTelefonicaModel.idagenda">
+ <summary>
+ Identificador da agenda telefonica 
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AgendaTelefonicaModel.nome">
+ <summary>
+ Descrição do contato da agenda telefoneca
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AgendaTelefonicaModel.celular">
+ <summary>
+ Numero de celular do contato
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AgendaTelefonicaModel.telefone">
+ <summary>
+ Numero de telefone fixo do contato
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AgendaTelefonicaModel.email">
+ <summary>
+ Endereço de e-mail do contato
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AgendaTelefonicaModel.endereco">
+ <summary>
+ Endereço fisico do contato
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AgendaTelefonicaModel.bairro">
+ <summary>
+ Bairro do contato
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AgendaTelefonicaModel.cidade">
+ <summary>
+ Cidade do contato
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AgendaTelefonicaModel.estado">
+ <summary>
+ Estado do contato
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AgendaTelefonicaModel.cep">
+ <summary>
+ CEP do contato
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AgendaTelefonicaModel.tipo">
+ <summary>
+ Tipo do contato: C(Cliente) e F(Fornecedor).
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AgendaTelefonicaModel.sexo">
+ <summary>
+ Sexo do contato
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AgendaTelefonicaModel.datanasc">
+ <summary>
+ Data de nascimento do contato
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AgendaTelefonicaModel.profissao">
+ <summary>
+ Profição do contato
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AgendaTelefonicaModel.empresa">
+ <summary>
+ Empresa do contato
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AgendaTelefonicaModel.empresacliente">
+ <summary>
+ Empresa do contato
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.AgendaTelefonicaModel.Buscar(System.String,System.Data.SqlClient.SqlCommand)">
+ <summary>
+ Retorna uma lista de AgendaTelefonicaModel de acordo com o codigo da loja e com o parametro de busca.
+ </summary>
+ <param name="CodLoja"></param>
+ <param name="parametro"></param>
+ <param name="CMD"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.AgendaTelefonicaModel.GetItemById(System.Int32,System.Int32)">
+ <summary>
+ Retorna uma AgendaTelefonicaModel que contenha o mesmo Codloja e id dos parametros.
+ </summary>
+ <param name="Codloja"></param>
+ <param name="id"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.AgendaTelefonicaModel.InsereAlteraAgendaTelefonica(modelOffice.AgendaTelefonicaModel,System.Data.SqlClient.SqlCommand)">
+ <summary>
+ Recebe uma AgendaTelefonicaModel e, caso a AgendaTelefonica exista seus dados sao atualizados, se nao, é inserido uma nova AgendaTelefonica na base de dados, e retorna o id da AgendaTelefonica.
+ </summary>
+ <param name="XAgenda"></param>
+ <param name="CMD"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.AgendaTelefonicaModel.ExcluirAgendatelefonica(System.Int64,System.Int32,System.Data.SqlClient.SqlCommand)">
+ <summary>
+ Exclui uma AgendaTelefonica na base de dados que contenha os parametros CodLoja e idagenda.
+ </summary>
+ <param name="idagenda"></param>
+ <param name="CodLoja"></param>
+ <param name="CMD"></param>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Alerta.MENSAGEM">
+ <summary>
+ Mensagem a ser exibida no alerta.
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Alerta.STATUS">
+ <summary>
+ Status do alerta (Alerta, Sucesso ou Erro).
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.Alerta.#ctor(modelOffice.Alerta.statusMsg,System.String)">
+ <summary>
+ Cria um novo alerta com os parametros status e mensagem informados.
+ </summary>
+ <param name="status"></param>
+ <param name="mensagem"></param>
+</member>
+<member name="P:modelOffice.AtendimentoModel.ID_ATENDIMENTO">
+ <summary>
+ Identificador do atendimento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AtendimentoModel.DATA">
+ <summary>
+ Data do atendimento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AtendimentoModel.HORA">
+ <summary>
+ Hora do atendimento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AtendimentoModel.FUNCIONARIO">
+ <summary>
+ Funcionario responsavel pelo atendimento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AtendimentoModel.NOMEFUNCIONARIO">
+ <summary>
+ Nome do funcionario responsavel pelo atendimento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AtendimentoModel.STATUS">
+ <summary>
+ Status que atendimento se encontra
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AtendimentoModel.CODCLI">
+ <summary>
+ Código do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AtendimentoModel.NOMECLI">
+ <summary>
+ Nome do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AtendimentoModel.FONE">
+ <summary>
+ Telefone do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AtendimentoModel.CIDADE">
+ <summary>
+ Cidade onde cliente reside
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AtendimentoModel.DESCRICAO">
+ <summary>
+ Observação e descrição do atendimento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.AtendimentoModel.DataFinal">
+ <summary>
+ Data final do atendimento
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.AtendimentoModel.Buscar(System.Int32,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.Data.SqlClient.SqlCommand)">
+ <summary>
+ Retorna uma lista de Atendimentos de acordo com as verificações dos parametros.
+ </summary>
+ <param name="ID"></param>
+ <param name="DATAINICIAL"></param>
+ <param name="DATAFINAL"></param>
+ <param name="FUNCIONARIO"></param>
+ <param name="CLIENTE"></param>
+ <param name="STATUS"></param>
+ <param name="Ordem"></param>
+ <param name="CMD"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.AtendimentoModel.Atualiza(modelOffice.AtendimentoModel,System.Data.SqlClient.SqlCommand)">
+ <summary>
+ Atualiza as informações de um Atendimento, retornado true caso operação tenha concretizada.
+ </summary>
+ <param name="ITEM"></param>
+ <param name="CMD"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.AtendimentoModel.Insere(modelOffice.AtendimentoModel,System.Data.SqlClient.SqlCommand)">
+ <summary>
+ Insere um atendimento novo na base de dados.
+ </summary>
+ <param name="item"></param>
+ <param name="CMD"></param>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BairroModel.Codigo">
+ <summary>
+ Código do bairro
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BairroModel.Nome">
+ <summary>
+ Nome do bairro
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BairroModel.Valor">
+ <summary>
+ Valor referente a taxa de entrega para o respectivo bairro
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BairroModel.AutorizadoEntrega">
+ <summary>
+ Verifica se é autorizado a entrega no bairro
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BairroModel.Km">
+ <summary>
+ Distância em quilometros da loja até o bairro
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BairroModel.Buscar(System.String,System.String,System.String,System.Data.SqlClient.SqlCommand)">
+ <summary>
+ Retorna uma lista de Bairros de acordo com os parametros informados. 
+ </summary>
+ <param name="TipoBusca"></param>
+ <param name="Parametro"></param>
+ <param name="Ordem"></param>
+ <param name="CMD"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BairroModel.AtualizaBairro(modelOffice.BairroModel,System.Data.SqlClient.SqlCommand)">
+ <summary>
+ Atualiza informações do bairro informado nos parametros.
+ </summary>
+ <param name="ITEM"></param>
+ <param name="CMD"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BairroModel.ExcluirBairro(modelOffice.BairroModel,System.Data.SqlClient.SqlCommand)">
+ <summary>
+ Exclui da base de dados o bairro informado nos parametros.
+ </summary>
+ <param name="Bairro"></param>
+ <param name="CMD"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BairroModel.InsereBairro(modelOffice.BairroModel,System.Data.SqlClient.SqlCommand)">
+ <summary>
+ Adiciona um novo bairro na base de dados com as propriedades do parametro item.
+ </summary>
+ <param name="item"></param>
+ <param name="CMD"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BairroModel.GetCodigoById(System.Int32)">
+ <summary>
+ Retorna o Codigo do bairro referente ao parametro id.
+ </summary>
+ <param name="id"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BairroModel.VerificaCodigoValido(System.String)">
+ <summary>
+ Realiza uma verificação de codigo na base de dados, se codigo informado no parametro existe retorna false, se não retorna true.
+ </summary>
+ <param name="codigo"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BairroModel.ReajusteTaxa(System.Collections.Generic.List{modelOffice.BairroModel},System.Boolean,System.Decimal,System.Boolean,System.String)">
+ <summary>
+ Atualiza o valor da taxa do(s) bairro(s) atraves dos parametros informados, e retorna true caso tenha efetuado a alteração ou false caso não tenha efetuado a alteração.
+ </summary>
+ <param name="listBairroReajuste"></param>
+ <param name="Porcentagem"></param>
+ <param name="Valor"></param>
+ <param name="Arredondar"></param>
+ <param name="TipoReajuste"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BairroModel.ImportarBairro(System.Int32)">
+ <summary>
+ Importa bairros da base de dados do MySql(Pediaki) para a base de dados do cliente.
+ </summary>
+ <param name="CodCidade"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BairroModel.InsereBairroLogradouroWinfood(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
+ <summary>
+ Insere na base de dados bairros e logradouros atraves dos comandos nos parametros.
+ </summary>
+ <param name="ComandoBairro"></param>
+ <param name="ComandoLogradouro"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BairroModel.GetLogradourosByCodBairro(System.String)">
+ <summary>
+ Retorna um DataTable de bairros da base MySql(Pediaki), referente aos codigos do parametro strCodBairro.
+ </summary>
+ <param name="strCodBairro"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BairroModel.ComandoInsertBairroWinfood(System.Data.DataTable)">
+ <summary>
+ Retorna uma lista de comandos de inserção dos bairros que constam no parametro dtBairro e não constam na base de dados. 
+ </summary>
+ <param name="dtBairro"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BairroModel.ComandoInsertLogradouroWinfood(System.Data.DataTable)">
+ <summary>
+ Retorna uma lista de comandos de inserção dos logradouros que constam no parametro dtLogradouros e não constam na base de dados. 
+ </summary>
+ <param name="dtLogradouros"></param>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BancoModel.AlteraBanco">
+ <summary>
+ Propriedade para verificar se é permitido realizar alteração/exclusão no banco
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BancoModel.numero">
+ <summary>
+ Numero do banco
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BancoModel.banco">
+ <summary>
+ Nome do banco
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BancoModel.CIDADE">
+ <summary>
+ Cidade do banco
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BancoModel.ESTADO">
+ <summary>
+ Estado em que o banco se encontra
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BancoModel.CEP">
+ <summary>
+ CEP do banco
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BancoModel.FONE">
+ <summary>
+ Telefone de contato do banco
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BancoModel.AGENCIA">
+ <summary>
+ Numero da agência do banco
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BancoModel.IDBANCOS">
+ <summary>
+ Identificador do banco
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BancoModel.BuscarListaDeBanco(System.Int64,System.String,System.String)">
+ <summary>
+ Retorna uma lista de bancos de acordo com as definições dos parametros.
+ </summary>
+ <param name="CodBanco"></param>
+ <param name="NomeBanco"></param>
+ <param name="Ordem"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BancoModel.BuscarBancoPorCodigo(System.Int32)">
+ <summary>
+ Verifica a existencia de um banco com o codigo igual ao parametro codBanco, caso exista seta as propriedades numero e banco na classe banco.
+ </summary>
+ <param name="codBanco"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BancoModel.UpdateBanco(System.Collections.Generic.List{modelOffice.BancoModel})">
+ <summary>
+ Atualiza dados dos bancos que constam na lista do parametro listBanco.
+ </summary>
+ <param name="listBanco"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BancoModel.UpdateBanco(modelOffice.BancoModel)">
+ <summary>
+ Atualiza informações do banco informado no parametro Banco.
+ </summary>
+ <param name="Banco"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BancoModel.DeleteBanco(System.Collections.Generic.List{modelOffice.BancoModel})">
+ <summary>
+ Deleta o(s) banco(s) do parametro listaBanco da base de dados.
+ </summary>
+ <param name="listBanco"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BancoModel.InsertBanco(modelOffice.BancoModel)">
+ <summary>
+ Insere um banco novo na base de dados.
+ </summary>
+ <param name="banco"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BancoModel.GetNumeroBancobyId(System.Int32)">
+ <summary>
+ Retorna o numero de um banco que possua o identificador igual ao parametro id.
+ </summary>
+ <param name="id"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BancoModel.VerificaCodigoValido(System.Int32)">
+ <summary>
+ Verifica se existe na base de dados um codigo igual ao parametro Codigo.
+ </summary>
+ <param name="Codigo"></param>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BaseModel.codloja">
+ <summary>
+ Codloja do registro
+ Todos os objetos devem possuir a propriedade _codLoja
+ </summary>
+ <returns></returns>
+</member>
+<member name="F:modelOffice.BaseModel._codLojas">
+ <summary>
+ Codigos das lojas, utilizado nas operações de select para retornar registros de várias lojas
+ </summary>
+</member>
+<member name="P:modelOffice.BaseModel.cnxAtual">
+ <summary>
+ Se no construtor da classe for passada a string de conexão, retorna esta, caso contrário retorna a variavel de conexão default(connSQL)
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BoletoModel.IDBOLETO">
+ <summary>
+ Identificador do boleto
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BoletoModel.CODBANCO">
+ <summary>
+ Código do banco
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BoletoModel.NUMCLIBCO">
+ <summary>
+ Numero do cliente no banco
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BoletoModel.AGENCIA">
+ <summary>
+ Agencia do banco do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BoletoModel.CONTA">
+ <summary>
+ Conta do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BoletoModel.DOCUMENTO">
+ <summary>
+ Numero do documento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BoletoModel.DATADOCTO">
+ <summary>
+ Data do boleto
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BoletoModel.DATAPROCDOCTO">
+ <summary>
+ Data de processamento do boleto
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BoletoModel.VENCTODOCTO">
+ <summary>
+ Vencimento do boleto
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BoletoModel.VALORDOCTO">
+ <summary>
+ Valor do boleto
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BoletoModel.DESCONTODOCTO">
+ <summary>
+ Desconto do boleto
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BoletoModel.MULTA">
+ <summary>
+ Multa por atraso
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BoletoModel.CODBARRAS">
+ <summary>
+ Código de barras do boleto
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.BoletoModel.CLIENTE">
+ <summary>
+ Cliente a receber boleto
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BoletoModel.AtualizaListaDeBoletos(System.String,System.Collections.Generic.List{modelOffice.Financeiro.Duplpag})">
+ <summary>
+ Atualiza lista de boleto na base de dados e retorna os respectivos identificadores.
+ </summary>
+ <param name="Banco"></param>
+ <param name="Lancamento"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BoletoModel.AtualizaBoleto(modelOffice.Financeiro.Duplpag)">
+ <summary>
+ Atualiza um boleto na base de dados e retorna o respectivo identificador.
+ </summary>
+ <param name="Lancamento"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BoletoModel.GeraBoletoBancario(System.String,System.String,System.String,System.String,System.String,System.String,System.Double,System.Double,System.String,System.Double,System.Double,System.String,System.String@,System.String@,System.String@,System.String@,System.Int64,System.Data.SqlClient.SqlCommand,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ Caso exista um boleto com identificador igual ao parametro idBoleto as informações do boleto são atualizadas, caso não exista insere um novo boleto na base de dados
+ </summary>
+ <param name="CODBANCO"></param>
+ <param name="CODCLIBCO"></param>
+ <param name="AGENCIA"></param>
+ <param name="CONTATO"></param>
+ <param name="DOCUMENTO"></param>
+ <param name="DATAEMISSAO"></param>
+ <param name="ValorDoc"></param>
+ <param name="Desconto"></param>
+ <param name="VenctoDoc"></param>
+ <param name="Multa"></param>
+ <param name="MoraDiaria"></param>
+ <param name="NOSSONUMERO"></param>
+ <param name="LINHA1"></param>
+ <param name="LINHA2"></param>
+ <param name="LINHA3"></param>
+ <param name="LINHA4"></param>
+ <param name="IdBoleto"></param>
+ <param name="cmd"></param>
+ <param name="NOMESACADO"></param>
+ <param name="ENDERECOSACADO"></param>
+ <param name="CIDADESACADO"></param>
+ <param name="UFSACADO"></param>
+ <param name="CEPSACADO"></param>
+ <param name="BAIRROSACADO"></param>
+ <param name="CPFSACADO"></param>
+ <param name="TIPOCF"></param>
+ <param name="CodEntidade"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BoletoModel.RelatorioBoleto(System.String,System.Collections.Generic.List{System.Int64})">
+ <summary>
+ Retorna uma lista de boletos de acordo com os ids que constam no parametro ListaIdBoleto.
+ </summary>
+ <param name="Banco"></param>
+ <param name="ListaIdBoleto"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.BoletoModel.BoletoValido(System.Int64,System.String,System.String)">
+ <summary>
+ Verifica se parametro IdBoleto pertence a um boleto valido.
+ </summary>
+ <param name="IdBoleto"></param>
+ <param name="CodBanco"></param>
+ <param name="NumCliBco"></param>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Caixa.Alterar">
+ Numero do Caixa
+</member>
+<member name="P:modelOffice.Caixa.CODOPERADOR">
+ Código do operador
+</member>
+<member name="P:modelOffice.Caixa.IdCaixa">
+ Identificador do caixa
+</member>
+<member name="P:modelOffice.Caixa.DINHEIRO">
+ Valor Digitado no Fechamento em Dinheiro 
+</member>
+<member name="P:modelOffice.Caixa.DinheiroApurado">
+ Valor Apurado no Fechamento em Dinheiro 
+</member>
+<member name="P:modelOffice.Caixa.CHEQUE">
+ Valor Digitado no Fechamento em Cheque
+</member>
+<member name="P:modelOffice.Caixa.ChequeApurado">
+ Valor Apurado no Fechamento em Dinheiro 
+</member>
+<member name="P:modelOffice.Caixa.TICKET">
+ Valor Digitado no Fechamento em Ticket
+</member>
+<member name="P:modelOffice.Caixa.TicketApurado">
+ Valor Apurado no Fechamento em Ticket
+</member>
+<member name="P:modelOffice.Caixa.VALE">
+ Valor Digitado no Fechamento em Vale
+</member>
+<member name="P:modelOffice.Caixa.ValeApurado">
+ Valor Apurado no Fechamento em Vale
+</member>
+<member name="P:modelOffice.Caixa.CARTAO">
+ Valor Digitado no Fechamento em Cartão
+</member>
+<member name="P:modelOffice.Caixa.CartaoApurado">
+ Valor Apurado no Fechamento em Cartao
+</member>
+<member name="P:modelOffice.Caixa.CONVENIO">
+ Valor Digitado no Fechamento em Convenio
+</member>
+<member name="P:modelOffice.Caixa.ConvenioApurado">
+ Valor Apurado no Fechamento em Convenio
+</member>
+<member name="P:modelOffice.Caixa.CREDIARIO">
+ Valor Digitado no Fechamento em Crediario
+</member>
+<member name="P:modelOffice.Caixa.CrediarioApurado">
+ Valor Apurado no Fechamento em Crediario
+</member>
+<member name="P:modelOffice.Caixa.CORTESIA">
+ Valor Digitado no Fechamento em Cortesia
+</member>
+<member name="P:modelOffice.Caixa.CortesiaApurado">
+ Valor Apurado no Fechamento em Cortesia
+</member>
+<member name="M:modelOffice.Caixa.selecionaCaixa(System.Int32)">
+ <summary>
+ Retorna a caixa que contenha o identificador igual ao parametro idcaixa.
+ </summary>
+ <param name="idcaixa"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.Caixa.selecionaCaixas(System.Collections.Generic.List{modelOffice.Caixa})">
+ <summary>
+ Retorna uma lista de caixas de acordo com o parametro listCaixa.
+ </summary>
+ <param name="listCaixa"></param>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.CentroCustoModel.alterar">
+ <summary>
+ Propriedade de verificação para realizar alteração/exclusão de centro de custo
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.CentroCustoModel.IDCONTAS">
+ <summary>
+ Identificador da conta
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.CentroCustoModel.CODIGO">
+ <summary>
+ Código da conta
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.CentroCustoModel.DESCRIC">
+ <summary>
+ Descrição referente a conta
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.CentroCustoModel.TIPO">
+ <summary>
+ Tipo da conta
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.CentroCustoModel.NATUREZA">
+ <summary>
+ Natureza da conta
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.CentroCustoModel.DATAC">
+ <summary>
+ Data da conta
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.CentroCustoModel.BuscaListaCentroDeCustoAgrupada(System.String,System.String,System.String)">
+ <summary>
+ Retorna uma lista de CentroCusto de acordo com os parametros informados.
+ </summary>
+ <param name="TipoBusca"></param>
+ <param name="Parametro"></param>
+ <param name="TipoOrdem"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.CentroCustoModel.AdicionaCentroCustoAnalitico(System.Collections.Generic.List{modelOffice.CentroCustoModel},System.String,System.String)">
+ <summary>
+ Adiciona um centro de custo na lista constante no parametro listCentroDeCusto.
+ </summary>
+ <param name="listCentroDeCusto"></param>
+ <param name="ContaSintetica"></param>
+ <param name="TipoOrdem"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.CentroCustoModel.BuscaCentroDeCusto(System.String,System.String,System.String)">
+ <summary>
+ Retorna uma lista de centro de custo de acordo com os parametros informado.
+ </summary>
+ <param name="TipoBusca"></param>
+ <param name="Parametro"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.CentroCustoModel.VerificaCodigoValido(System.Int32)">
+ <summary>
+ Verifica se parametro Codigo existe na base de dados.
+ </summary>
+ <param name="Codigo"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.CentroCustoModel.Update(modelOffice.CentroCustoModel)">
+ <summary>
+ Atualiza informações do centro de custo informado no parametro item.
+ </summary>
+ <param name="item"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.CentroCustoModel.Delete(System.Collections.Generic.List{modelOffice.CentroCustoModel})">
+ <summary>
+ Deleta da base de dados o(s) centro de custo(s) informado(s) no parametro list.
+ </summary>
+ <param name="list"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.CentroCustoModel.Insert(modelOffice.CentroCustoModel)">
+ <summary>
+ Insere um novo centro de custo na base de dados.
+ </summary>
+ <param name="item"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.CentroCustoModel.GetCodigoById(System.Int32,System.Data.SqlClient.SqlCommand)">
+ <summary>
+ Retorna o codigo do centro de custo referente ao parametro id
+ </summary>
+ <param name="id"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.CentroCustoModel.ListaNatureza">
+ <summary>
+ Retorna uma lista de string contendo as naturezas.
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.CfopModel.IdCFOP">
+ <summary>
+ Identificador CFOP
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.CfopModel.CODIGO">
+ <summary>
+ Código do CFOP
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.CfopModel.DESCRICAO">
+ <summary>
+ Descrição do CFOP
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.CfopModel.BuscaListaCFOP(System.String,System.String)">
+ <summary>
+ Retorna uma lista de Cfop, verificando o tipo de busca e parametro caso seja informado.
+ </summary>
+ <param name="TipoBusca"></param>
+ <param name="Parametro"></param>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.CidadeModel.CodCidade">
+ <summary>
+ Código da cidade
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.CidadeModel.Cidade">
+ <summary>
+ Nome da cidade
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.CidadeModel.UF">
+ <summary>
+ UF da cidade
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.CidadeModel.BuscarCidadePediaki(System.String,System.String)">
+ <summary>
+ Retorna um IEnumerable de cidades na base de dados MySql(Pediaki).
+ </summary>
+ <param name="Cidade"></param>
+ <param name="Estado"></param>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.AlterarCliente">
+ <summary>
+ Propriedade para verificar se poder alterar/excluir cliente 
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.CODIGO">
+ <summary>
+ Código do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="F:modelOffice.ClienteModel._NOME">
+ <summary>
+ Nome do cliente
+ </summary>
+</member>
+<member name="F:modelOffice.ClienteModel._ENDER">
+ <summary>
+ Endereço do cliente
+ </summary>
+</member>
+<member name="F:modelOffice.ClienteModel._CIDADE">
+ <summary>
+ Cidade do cliente
+ </summary>
+</member>
+<member name="F:modelOffice.ClienteModel._CEP">
+ <summary>
+ CEP do endereço do cliente
+ </summary>
+</member>
+<member name="F:modelOffice.ClienteModel._BAIRRO">
+ <summary>
+ Bairro do cliente
+ </summary>
+</member>
+<member name="F:modelOffice.ClienteModel._FONE">
+ <summary>
+ Telefone do cliente
+ </summary>
+</member>
+<member name="F:modelOffice.ClienteModel._TRABALHO">
+ <summary>
+ Local de trabalho do cliente
+ </summary>
+</member>
+<member name="P:modelOffice.ClienteModel.RENDA">
+ <summary>
+ Renda do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="F:modelOffice.ClienteModel._FONE1">
+ <summary>
+ Numero de telefone do cliente
+ </summary>
+</member>
+<member name="F:modelOffice.ClienteModel._REFER1">
+ <summary>
+ 1ª referencia do cliente
+ </summary>
+</member>
+<member name="F:modelOffice.ClienteModel._REFER2">
+ <summary>
+ 2ª referencia do cliente
+ </summary>
+</member>
+<member name="F:modelOffice.ClienteModel._RG">
+ <summary>
+ RG do cliente
+ </summary>
+</member>
+<member name="F:modelOffice.ClienteModel._NASC">
+ <summary>
+ Data de nascimento do cliente
+ </summary>
+</member>
+<member name="F:modelOffice.ClienteModel._BANCO">
+ <summary>
+ Banco do cliente
+ </summary>
+</member>
+<member name="F:modelOffice.ClienteModel._AGENCIA">
+ <summary>
+ Numero da agencia do cliente
+ </summary>
+</member>
+<member name="F:modelOffice.ClienteModel._CONTA">
+ <summary>
+ Numero da conta do cliente
+ </summary>
+</member>
+<member name="P:modelOffice.ClienteModel.CELULAR">
+ <summary>
+ Numero de celular do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.EMAIL">
+ <summary>
+ Endereço de email do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.SEXOCLI">
+ <summary>
+ Genero do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.FAXCLI">
+ <summary>
+ Numero de fax do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.SITE">
+ <summary>
+ Site do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.OBSCLI">
+ <summary>
+ Observação referente ao cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.DIASPROTESTO">
+ <summary>
+ Qauntidade de dias de protesto
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.PROFISSAOCLI">
+ <summary>
+ Profissão do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.EMAILAMIGO">
+ <summary>
+ Eendereço de email de um amigo do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.OBSPROF">
+ <summary>
+ Observação referente a profissão do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.ESTCIVIL">
+ <summary>
+ Estado civil do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.NOMEPAI">
+ <summary>
+ Nome do pai do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.NOMEMAE">
+ <summary>
+ Nome da mão do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.FILHOS">
+ <summary>
+ Quantidade de filhos do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.OBSFAMILIA">
+ <summary>
+ Observação referente a família do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.NOMECON">
+ <summary>
+ Nome do cônjuge do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.DATACASAMENTO">
+ <summary>
+ Data de casamento do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.PROFISSAOCON">
+ <summary>
+ Profissão do cônjuge
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.DATANASCCON">
+ <summary>
+ Data de nascimento do cônjuge
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.EMAILCON">
+ <summary>
+ Endereço de email do cônjuge
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.FONECON">
+ <summary>
+ Numero de telefone do cônjuge
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.CELCON">
+ <summary>
+ Numero de celular do cônjuge
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.SEXOCON">
+ <summary>
+ Genero do cônjuge
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.IDCLIENTES">
+ <summary>
+ Identificador do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.CODMUNIC">
+ <summary>
+ Código do municipio
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.CODBAIRRO">
+ <summary>
+ Código do bairro
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.VIP">
+ <summary>
+ Verificação de cliente VIP
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.BLOQUEADO">
+ <summary>
+ Verificação de cliente bloqueado
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.EMPRESACLIENTE">
+ <summary>
+ Nome da empresa do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ClienteModel.PrazoParaDesconto">
+ <summary>
+ Numero en dias para prazo de desconto
+ </summary>
+ <returns></returns>
+</member>
+<member name="F:modelOffice.ClienteModel._CPF">
+ <summary>
+ CPF do cliente
+ </summary>
+</member>
+<member name="M:modelOffice.ClienteModel.buscarClientes(System.Int64,System.String,System.String,System.String,System.String,System.String,System.Int32)">
+ <summary>
+ Realiza uma busca utilizando os parametros informado e retorna uma lista de clientes.
+ </summary>
+ <param name="codigo"></param>
+ <param name="nome"></param>
+ <param name="fone"></param>
+ <param name="CPFCNPJ"></param>
+ <param name="endereco"></param>
+ <param name="ordem"></param>
+ <param name="limite"></param>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Comando.IDCOMANDO">
+ <summary>
+ Identificador do comando
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Comando.COMANDO">
+ <summary>
+ Numero do comando
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Comando.CODIGO">
+ <summary>
+ Código do comando
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Comando.NOME">
+ <summary>
+ Nome do comando
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Comando.QUANT">
+ <summary>
+ Quantidade do comando
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Comando.VALOR">
+ <summary>
+ Valor do comando
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Comando.DATAC">
+ <summary>
+ Data do comando
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Comando.REGISTRO">
+ <summary>
+ Numero do registro do camando
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Comando.GRUPO">
+ <summary>
+ Grupo que comando pertence
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Comando.COMISSAO">
+ <summary>
+ Valor da comição
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Comando.COMISSAOPERCENT">
+ <summary>
+ Porcentagem do valor da comição
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Comando.FUNCIONAR">
+ <summary>
+ Funcionario do comando
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Comando.NOMEFUNCIONAR">
+ <summary>
+ Nome do funcionario
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Comando.DIAS_LOCACAO">
+ <summary>
+ Quantidade de dias em locação
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ComprovanteSaida.Alterar">
+ <summary>
+ Propriedade para verificar se pode alterar/excluir comprovate
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ComprovanteSaida.IdCOMPRSAIDA">
+ <summary>
+ Identificador do comprovande saida
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ComprovanteSaida.CARTAOSAIDA">
+ <summary>
+ Numero do cartão saida
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ComprovanteSaida.DOCTO">
+ <summary>
+ Numero do documento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ComprovanteSaida.DATASAIDA">
+ <summary>
+ Data de saida
+ </summary>
+ <returns></returns>
+</member>
+<member name="F:modelOffice.ConexaoModel.connSQL">
+ <summary>
+ Conexão com a base de dados Winfood
+ </summary>
+</member>
+<member name="F:modelOffice.ConexaoModel.connSQLPediaki">
+ <summary>
+ Conexão com base de dados PediAki Correios
+ </summary>
+</member>
+<member name="F:modelOffice.ConexaoModel.connSQLPediakiWinFood">
+ <summary>
+ Conexão com base de dados PediAki WinFood
+ </summary>
+</member>
+<member name="P:modelOffice.ConfigModel.IdConfig">
+ <summary>
+ Identificador da configuração
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ConfigModel.CDATA">
+ <summary>
+ Data da configuração
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.ConfigModel.NomeServidor">
+ <summary>
+ Nome do servidor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.EmpresaModel.NroMaquina">
+ <summary>
+ Numero da maquina
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.EmpresaModel.CODIGO">
+ <summary>
+ Código da empresa
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.EmpresaModel.NOME">
+ <summary>
+ Nome da empresa
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.EmpresaModel.ENDER">
+ <summary>
+ Endereço da empresa
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.EmpresaModel.CIDADE">
+ <summary>
+ Cidade da empresa
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.EmpresaModel.ESTADO">
+ <summary>
+ Estado da empresa
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.EmpresaModel.CGC">
+ <summary>
+ Numero do CNPJ da empresa
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.EmpresaModel.FONE">
+ <summary>
+ Numero de telefone da empresa
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.FORNECEDOR">
+ <summary>
+ Código do fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.NOMEFORNECEDOR">
+ <summary>
+ Nome do fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.DATAMOV">
+ <summary>
+ Data de movimento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.NOTA">
+ <summary>
+ Numero da nota
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.QUANT">
+ <summary>
+ Quantidade de produto na entrada
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.QUANTIDADE">
+ <summary>
+ Quantidade da entrada
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.UNITARIO">
+ <summary>
+ Valor unitario do produto da entrada
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.CODPROD">
+ <summary>
+ Código do produto
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.VALOR">
+ <summary>
+ Valor da entrada
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.DESCONTO">
+ <summary>
+ Valor de desconto da entrada
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.DESPESA">
+ <summary>
+ Valor de despesa da entrada
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.TOTVALOR">
+ <summary>
+ Valor total da entrada
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.ICMS">
+ <summary>
+ Valor ICMS
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.IPI">
+ <summary>
+ Valor IPI
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.ICMSST">
+ <summary>
+ Valor ST-ICMS
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.DIRECAO">
+ <summary>
+ Direção da entrada: E(Entrada); S(Saida)
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.DATAENTRADA">
+ <summary>
+ Data da entrada
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.DEPTO">
+ <summary>
+ Departamento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.IDENTRADA">
+ <summary>
+ Identificador da entrada
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.IDCOMPRA">
+ <summary>
+ Identificador da compra
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.CCUSTO">
+ <summary>
+ Numero do centro de custo
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.DESCCCUSTO">
+ <summary>
+ Descrição do centro de custo
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.FINALIDADE">
+ <summary>
+ Finalidade da entrada
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.PCOMPRAANT">
+ <summary>
+ Preço de compra anterior
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.BASEIPI">
+ <summary>
+ Valor Base IPI
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.BASEICMS">
+ <summary>
+ Valor Base ICMS
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.OBSERVACOES">
+ <summary>
+ Observações da entrada
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.IDSAIDA">
+ <summary>
+ Identificador da saida
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.NFE">
+ <summary>
+ Numero NFE
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.CODPRODNFE">
+ <summary>
+ Código do produto na NFE
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.BASEICMSST">
+ <summary>
+ Valor ST-Base ICMS
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.PMEDIO">
+ <summary>
+ Valor preço médio
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.NOME">
+ <summary>
+ Nome do produto
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.ALIQIPI">
+ <summary>
+ Valor alíquota IPI
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.BASECOFINS">
+ <summary>
+ Valor Base CFINS
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.BASECOFINSST">
+ <summary>
+ Valor ST-Base COFINS
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.BASEPIS">
+ <summary>
+ Valor Base PIS
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.BASEPISST">
+ <summary>
+ Valor ST-Base Pis
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.COFINS">
+ <summary>
+ Valor COFINS
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.COFINSST">
+ <summary>
+ Valor ST-COFINS
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.PIS">
+ <summary>
+ Valor PIS
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.PISST">
+ <summary>
+ Valor ST-PIS
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.VALORICMSST">
+ <summary>
+ Valor ST-ICMS
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.DATA_RETORNO">
+ <summary>
+ Data de retorno
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.DIASLOCACAO">
+ <summary>
+ Quantidade de dias em locação
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.MULTALOCACAO">
+ <summary>
+ Valor de multa por locação
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.NOMEFUNCIONAR">
+ <summary>
+ Nome do funcionario
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.VALORICMS">
+ <summary>
+ Valor do ICMS
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.DATAVALIDADE">
+ <summary>
+ Data de validade
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.PVENDA">
+ <summary>
+ Valor preço de venda
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.DEPART">
+ <summary>
+ Departamento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Entrada.LUCRO">
+ <summary>
+ Lucro em porcentagem do produto
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.EstoqueDiaModel.Busca(System.String,System.String,System.String,System.Data.SqlClient.SqlCommand)">
+ <summary>
+ Retorna uma lista de estoque dia de acordo com os parametros IdEstoque, DataInventario e CodProduto
+ </summary>
+ <param name="IdEstoque"></param>
+ <param name="DataInventario"></param>
+ <param name="CodProduto"></param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.EstoqueDiaSetorModel.Buscar(System.String,System.String,System.String,System.String,System.Data.SqlClient.SqlCommand)">
+ <summary>
+ Retorna uma lista de estoque dia setor de acordo com os parametros IdEstoque, DataInventario e CodProduto
+ </summary>
+ <param name="IdEstoque"></param>
+ <param name="DataInventario"></param>
+ <param name="CodProduto"></param>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FechamentoMensal.ID">
+ <summary>
+ Identificador do fechamento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FechamentoMensal.DATA">
+ <summary>
+ Data do fechamento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FechamentoMensal.NATUREZA">
+ <summary>
+ Natureza do fechamento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FechamentoMensal.VALORC">
+ <summary>
+ Valor de credito
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FechamentoMensal.VALORD">
+ <summary>
+ Valor de divida
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FidelizacaoModel.Id_Fidelizacao">
+ <summary>
+ Identificador da fidelização
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FidelizacaoModel.Cliente">
+ <summary>
+ Código do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FidelizacaoModel.NomeCli">
+ <summary>
+ Nome do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FidelizacaoModel.FoneCli">
+ <summary>
+ Numero telefone do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FidelizacaoModel.Data">
+ <summary>
+ Data da fidelização
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FidelizacaoModel.Descricao">
+ <summary>
+ Descrição da fidelização
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FidelizacaoModel.ValorVenda">
+ <summary>
+ Valor Venda
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FidelizacaoModel.Consumo">
+ <summary>
+ Valor consumo da fidelização
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FidelizacaoModel.Baixa">
+ <summary>
+ Verificação de baixa da fidelização
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FidelizacaoModel.PontosBaixados">
+ <summary>
+ Valor de pontos baixados da fidelização
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FidelizacaoModel.Credito">
+ <summary>
+ Valor de crédito da fidelização
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FidelizacaoModel.Produto">
+ <summary>
+ Código do produto
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FidelizacaoModel.IdMovEntra">
+ <summary>
+ Identificador do movimento da entrada
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FidelizacaoModel.IdTermin1">
+ <summary>
+ Identificador do terminal 1
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:modelOffice.Financeiro.Duplpag">
+ <summary>
+ Esta classe representa o lançamento financeiro, que pode estar pago/a pagar/recebido/ a receber
+ </summary>
+</member>
+<member name="P:modelOffice.Financeiro.Duplpag.FORNECEDOR">
+ <summary>
+ Codigo do Beneficiario não necessariamente o codigo do fornecedor, pois uma sangria pode ter benificarios como banco/fornecedor/cliente/funcionario
+ O que define o tipo do codigo fornecedor é o campo TIPOCF
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Financeiro.Duplpag.VALOR">
+ <summary>
+ Subtotal, não compreende os acresicimos, juros e descontos
+ para o valor cheio utilize a propriedade TOTAL
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Financeiro.Duplpag.TIPOCF">
+ <summary>
+ Define o tipo do beneficiario
+ B = BANCO
+ U = FUNCIONARIO
+ C = CLIENTE
+ F = FORNECEDOR
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.Financeiro.Duplpag.graficoContas(System.String,System.String,modelOffice.Financeiro.tipoRelatorio)">
+ <summary>
+ Retorna uma list(of object) (object.descricao, object.valor)
+ </summary>
+ <param name="dataInicio"></param>
+ <param name="dataFim"></param>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.Codigo">
+ <summary>
+ Código do fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.Nome">
+ <summary>
+ Nome fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.fantasia">
+ <summary>
+ Nome fantasia fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.endereco">
+ <summary>
+ Endereço fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.numero">
+ <summary>
+ Numero fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.Cidade">
+ <summary>
+ Cidade do fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.Estado">
+ <summary>
+ Estado do fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.Cep">
+ <summary>
+ CEP do endereço do fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.Fone">
+ <summary>
+ Numero do telefone do fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.Ramo">
+ <summary>
+ Tipo de ramo do fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.Bairro">
+ <summary>
+ Bairro do fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.cgc">
+ <summary>
+ Numero do CNPJ
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.cpf">
+ <summary>
+ Numero do CPF
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.rg">
+ <summary>
+ Numero do RG
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.celular">
+ <summary>
+ Numero do celular do fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.email">
+ <summary>
+ Endereço de email do fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.fax">
+ <summary>
+ Numero de fax do fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.site">
+ <summary>
+ Endereço de site do fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.skype">
+ <summary>
+ Conta de Skype do fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.CNAE">
+ <summary>
+ Numero do CNAE da area de atuação do fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.codmunic">
+ <summary>
+ Código do municipio
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.prazoEntrega">
+ <summary>
+ Prazo para entrega
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.observacoes">
+ <summary>
+ Observações do fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.OptSimplesNacional">
+ <summary>
+ Opição ao simples nacional
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.ListaCompra">
+ <summary>
+ Lista de compras do fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.FornecedorModel.ListaLancamentosFinanceiros">
+ <summary>
+ Lista de lançamentos financeiros do fornecedor
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.FornecedorModel.ExisteOutroFornecedorComCPFCNPJ(System.String,System.String)">
+ <summary>
+ Verifica a existencia de outro fornecedor com o mesmo CNPJ do parametro Cnpj
+ </summary>
+ <param name="Codigo"></param>
+ <param name="Cnpj"></param>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Funcionario.FuncionarioModel.AlterarFuncionario">
+ <summary>
+ Propriedade para verificar se pode alterar/excluir funcionario
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Funcionario.FuncionarioModel.codigo">
+ <summary>
+ Código do funcionario
+ </summary>
+ <returns></returns>
+</member>
+<member name="F:modelOffice.Funcionario.FuncionarioModel._nome">
+ <summary>
+ Nome do funcionario
+ </summary>
+</member>
+<member name="F:modelOffice.Funcionario.FuncionarioModel._ender">
+ <summary>
+ Endereço do funcionario
+ </summary>
+</member>
+<member name="F:modelOffice.Funcionario.FuncionarioModel._cidade">
+ <summary>
+ Cidade do funcionario
+ </summary>
+</member>
+<member name="F:modelOffice.Funcionario.FuncionarioModel._estado">
+ <summary>
+ Estado do funcionario
+ </summary>
+</member>
+<member name="F:modelOffice.Funcionario.FuncionarioModel._fone">
+ <summary>
+ Numero de telefone do funcionario
+ </summary>
+</member>
+<member name="F:modelOffice.Funcionario.FuncionarioModel._bairro">
+ <summary>
+ Nome do bairro do funcionario
+ </summary>
+</member>
+<member name="F:modelOffice.Funcionario.FuncionarioModel._senha">
+ <summary>
+ Senha do funcionario
+ </summary>
+</member>
+<member name="F:modelOffice.Funcionario.FuncionarioModel._funcao">
+ <summary>
+ Função do funcionario
+ </summary>
+</member>
+<member name="F:modelOffice.Funcionario.FuncionarioModel._cep">
+ <summary>
+ CEP do endereço do funcionario
+ </summary>
+</member>
+<member name="P:modelOffice.Funcionario.FuncionarioModel.IDVENDAS">
+ <summary>
+ Identificador da venda
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.Funcionario.FuncionarioModel.DESCONTO">
+ <summary>
+ Valor de desconto
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.FuncoesDeTratamento.RetornaSomenteNumero(System.String)">
+ <summary>
+ Verifica todos os caracteres do parametro Texto, retornando apenas os numeros contido nele.
+ </summary>
+ <param name="Texto"></param>
+ <returns></returns>
+</member>
+<member name="T:modelOffice.Grafico">
+ <summary>
+ Classe que define a estrutura generica para dados que serão carregados em um gráfico
+ </summary>
+</member>
+<member name="P:modelOffice.GrupoModel.alterar">
+ <summary>
+ Propriedade para verificar se pode alterar/excluir grupo
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.GrupoModel.iddepto">
+ <summary>
+ Identificador do departamento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.GrupoModel.CODIGO">
+ <summary>
+ Código do departamento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.GrupoModel.NOME">
+ <summary>
+ Nome do departamento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.GrupoModel.FINALIDADE">
+ <summary>
+ Finalidade do departamento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.GrupoModel.SITUACAO">
+ <summary>
+ Situação do departamento entre Ativo e Inativo
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.GrupoModel.GRUPO">
+ <summary>
+ Grupo do departamento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.GrupoModel.MARKUPDESEJADO">
+ <summary>
+ Valor da Porcentagem desejada no MarkUp
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.GrupoModel.COR">
+ <summary>
+ Cor na apresentação do nome do grupo na aplicação
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.GrupoModel.CODIGOBARRAS">
+ <summary>
+ Verifica se usa código de barras
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.GrupoModel.COMPLETA1UND">
+ <summary>
+ Verifica se completa mais uma unidade
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.GrupoModel.deptoweb">
+ <summary>
+ Departamento na web
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.GrupoModel.IMAGEM">
+ <summary>
+ Imagem do departamento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.GrupoModel.tablet">
+ <summary>
+ Verifica se utiliza o tablet no departamento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.GrupoModel.mobile">
+ <summary>
+ Verifica se utiliza mobile no departamento
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.GrupoModel.ExibirSomatorio">
+ <summary>
+ Verifica a exibição das somatórioas
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.GrupoModel.moduloDeExibicao">
+ <summary>
+ Tipo de modulo de exibição
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.GrupoModel.DEPTOMOBILE">
+ <summary>
+ Verifica departamento no modo mobile
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.GrupoModel.NUM_OBS_NAO_COBRADA">
+ <summary>
+ Numero de observações não cobradas
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.GrupoModel.ImagemBanco">
+ <summary>
+ Imagem de banco
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.ProducaoModel.graficoProducao(System.String,System.String,modelOffice.EstoqueDiaModel.tipoRelatorio)">
+ <summary>
+ Retorna uma list(of object) (object.descricao, object.valor)
+ </summary>
+ <param name="dataInicio"></param>
+ <param name="dataFim"></param>
+ <param name="tipoDtRel">Tipo de relatóio {Analítico ou Sintético}</param>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.itemModel.nroCartao">
+ <summary>
+ obtem apenas o numero que determina a mesa/balcao ou nro de entrega do campo composto udata.cartao(property cartao)
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.AlteraMesa">
+ <summary>
+ Propriedade para verificar se pode alterar/excluir mesa
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.IDCARTAO">
+ <summary>
+ Identificador do cartão
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.CARTAO">
+ <summary>
+ Numero do cartão
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.SEQUENCIA">
+ <summary>
+ Numero de sequencia
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.OPERAD">
+ <summary>
+ Numero da operadora
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.CLIENTE">
+ <summary>
+ Numero do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.FUNCIONARI">
+ <summary>
+ Código do funcionario
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.CREDITO">
+ <summary>
+ Valor de crédito
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.COMISSAO">
+ <summary>
+ Verifica se possui comissão
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.DATAE">
+ <summary>
+ Data de entrada
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.VALOR">
+ <summary>
+ Valor da mesa
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.PRODUTO">
+ <summary>
+ Código do produto
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.IDENT">
+ <summary>
+ Identificador da entrada
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.CONSUMO">
+ <summary>
+ Valor consumo
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.LIMITE">
+ <summary>
+ Valor do limite
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.TOTAL">
+ <summary>
+ Valor total
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.DESCONTO">
+ <summary>
+ Valor de desconto
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.CPF">
+ <summary>
+ CPF do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.RG">
+ <summary>
+ RG do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.ENDERECO">
+ <summary>
+ Endereço do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.CIDADE">
+ <summary>
+ Cidade do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.ESTADO">
+ <summary>
+ Estado do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.NASCTO">
+ <summary>
+ Data de nascimento do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.FONE">
+ <summary>
+ Numero de telefone do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.TRABALHO">
+ <summary>
+ Trabalho do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.EMAIL">
+ <summary>
+ Endereço de email do cliente
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.HORA">
+ <summary>
+ Horario da mesa
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MesaModel.PV">
+ <summary>
+ Numero do ponto de venda
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:modelOffice.MovimentoPendente">
+ <summary>
+ Esta classe corresponde a tabela CDATA
+ Nesta tabela é armazenado os cartoes e entregas pendentes no fechamento do caixa
+ </summary>
+</member>
+<member name="P:modelOffice.MovimentoPendente.cartao">
+ <summary>
+ Indica o nro do cartao ou entrega
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.MovimentoPendente.operad">
+ <summary>
+ Codigo funcionario do caixa
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.PData.IdPdata">
+ <summary>
+ Identificador da PData
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.PData.EMPRESA">
+ <summary>
+ Tipo de empresa (V-Venda / S-Sangria / U-sUprimento / B-Baixa Fiado / I-Inicio Caixa / C-Checkin)
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.PData.IDCAIXA">
+ <summary>
+ Identificador do caixa
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.PData.IDUDATA">
+ <summary>
+ Identificador da UData
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.PData.PARCELAS">
+ <summary>
+ Numero de quantidades de parcelas
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.PData.RetornaTotalFinalizadoras(System.Int64,modelOffice.Caixa@)">
+ <summary>
+ Recebe o identificador do caixa e o objeto caixa para retornalo com os valores totais finalizadoras 
+ </summary>
+ <param name="IdCaixa"></param>
+ <param name="XCaixa"></param>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.LojaModel.NOMELOJA">
+ <summary>
+ Nome da loja
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.LojaModel.CNPJLOJA">
+ <summary>
+ CNPJ da loja
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.LojaModel.IELOJA">
+ <summary>
+ Inscrição estadual da loja
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.LojaModel.CIDADELOJA">
+ <summary>
+ Cidade da loja
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.LojaModel.UFLOJA">
+ <summary>
+ Estado da loja
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.LojaModel.qtdRegistro">
+ <summary>
+ Quantidade de registro da loja
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:modelOffice.movim">
+ <summary>
+ Classe movim representa o log de produtos estornados
+ </summary>
+</member>
+<member name="P:modelOffice.movim.empresa">
+ <summary>
+ empresa =1 estorno produto, 2=cancelamento de entrega, 3 = alteração de preço, 4= cancelamento de sangria/suprimento, 5= alteração taxa de entrega
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.movim.cancela">
+ <summary>
+ M= Cancelamento de produtos em mesa/balcao, E = cancelamento em entrega, V = cancelamento de venda efetuada(item por item da venda)
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.movim.funcLancou">
+ <summary>
+ Codigo do funcionario que realizou o lançamento do produto
+ coluna DB movim.funcionar
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.movim.funcEstornou">
+ <summary>
+ codigo do funcionario que estornou o lançamento
+ coluna DB movim.funcionap
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.movim.tipoestorno">
+ <summary>
+ 0 = sem impressão de produção, 1 = com impresso de produção e conta, 2 = com impressao de producao
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.movim.selecionar(System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ Retorna uma lista de itens estornados conforme os filstros informados
+ </summary>
+ <param name="idscaixa">ids de caixa separados por virgula</param>
+ <param name="comImpressao"> true = produtos estornados com impressão, false = produtos estornados sem impressão</param>
+ <param name="produtos">ids de produtos separados por virgula</param>
+ <param name="cartoes">ids de cartoes separados por virgula</param>
+ <returns></returns>
+</member>
+<member name="T:modelOffice.movimPrecoAlterados">
+ <summary>
+ A classe movimPrecoAlterados é o log das alterações de preços de produtos 
+ Ela tem como classe base a movim pois os preços alterados tbm são armazenados na tabela movim
+ porem por uma questão de organização criamos uma nova classe para distinguir esses dados
+ 
+ </summary>
+</member>
+<member name="T:modelOffice.movimEntregaVenda">
+ <summary>
+ A classe movimEntregaVenda é o log dos cancelamentos de entregas/vendas(convretizada)
+ Os cancelamentos de entrega/venda também são armazenados na tabela movim, por uma questao de organização e estruturação criamos esta nova classe
+ ''' </summary>
+</member>
+<member name="P:modelOffice.movimEntregaVenda.tipo">
+ <summary>
+ 1 - Cancelamento de Venda(uma venda pode ser uma entrega tbm), 2 - Cancelamento de Entrega(apenas entregas que não foram baixadas)
+ Vale lembrar que uma entrega quando baixada vira uma venda, mas aqui estamos tratando se o que foi cancelado foi uma entrega(tipo = 2), ou seja, uma entrega não baixada, ou uma venda(Tipo = 1) 
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.Pedido.RetornaProdutosVendidos(System.String,System.String,System.String,System.String,System.Boolean,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ Utilizada no relatorio de produtos vendidos analitico e sintético, retorna produtos vendidos no CAIXA E PEDIDO
+ </summary>
+ <param name="DataInicio"></param>
+ <param name="DataFim"></param>
+ <param name="TipoAnaliticoSintetico"></param>
+ <param name="Ordem"></param>
+ <param name="OrdemDescendente"></param>
+ <param name="Produto"></param>
+ <param name="Cliente"></param>
+ <param name="Vendedor"></param>
+ <param name="CFOP"></param>
+ <param name="Grupo"></param>
+ <param name="Setor"></param>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.RelatorioCaixa.caixas">
+ <summary>
+ Um relatorio pode ter 1 ou mais caixas
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.RelatorioCaixa.totaisTiposVenda">
+ <summary>
+ retorna os totais dos tipo de venda ex(total de venda Balcao, total de venda Entrega e etc.)
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.RelatorioCaixa.totaisVenda">
+ <summary>
+ Representa o total de Valores monétarios da venda, não inclui sangrias/suprimentos, abertura de caixa e etc
+ compreende apenas os registros com empresa='V' da tabela PDATA
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.RelatorioCaixa.totaisInformado">
+ <summary>
+ Total de cada tipo de forma de pgto informado pelo usuario no fechamento do caixa
+ estes totais serão confrontados com o totalApurado
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.RelatorioCaixa.totaisApurado">
+ <summary>
+ Representa o Total de Valores Monetários, calculado pelo sistema
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.RelatorioCaixa.totGruposItens">
+ <summary>
+ Produtos vendidos sintetico/analitico
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.RelatorioCaixa.totSetorItens">
+ <summary>
+ Total de itens vendidos por setor
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.RelatorioCaixa.recebAntecipadoEntrega">
+ <summary>
+ Recebimentos parciais de encomenda
+ Esse valor é acrescido no Histórico de caixa
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.RelatorioCaixa.recebAntecipadoEntregaCxDif">
+ <summary>
+ Recebimentos parciais de encomenda em outros caixas, porem baixadas neste e gerando valor de venda
+ esse valor deduz no Histórico de caixa
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.RelatorioCaixa.totalGeral">
+ <summary>
+ Soma o total venda Periodo e abate todos os debitos e soma todos os creditos afim de obter o valor liquido em valor existe em caixa
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.RelatorioCaixa.totTipoVenda.tipo">
+ <summary>
+ Tipo de venda(UDATA.TIPO)
+ B = BALCÃO
+ C = CALLCENTER
+ E = ENTREGA
+ F = FURA FILA
+ M = MESA/CARTAO
+ W = WEB
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.RelatorioCaixa.totTipoVenda.tipoRecebimento">
+ <summary>
+ V = VISTA
+ F = A PRAZO(fiado)
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:modelOffice.RelatorioCaixa.vendasPorRecebi">
+ <summary>
+ Vendas classificadas por forma de recebimento
+ </summary>
+</member>
+<member name="P:modelOffice.RelatorioCaixa.vendasPorRecebi.tipo">
+ <summary>
+ Tipo da forma de pagamento (01 DInheiro, 02 Cheque, 03 Ticket, 04 Vale, 05 Cartao, 06 Convenio, 08 Cortesia, 09 TaPAgo)
+ referente ao campo PDATA.TIPO
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.RelatorioCaixa.vendasPorRecebi.ticket">
+ <summary>
+ Codigo do Cartao ou Ticket
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.RelatorioCaixa.vendasPorRecebi.nomeFoma">
+ <summary>
+ Nome do tipo forma pgto ou cartao/ticket
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.TrocaMesa.funcLancou">
+ <summary>
+ Codigo do funcionario que realizou o lançamento do produto
+ </summary>
+</member>
+<member name="P:modelOffice.TrocaMesa.funcEstornou">
+ <summary>
+ codigo do funcionario que estornou o lançamento
+ </summary>
+</member>
+<member name="M:modelOffice.VendasCaixa.retornaVendasPeriodo(System.String,System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ Retornar total de venda agrupado por Perido
+ </summary>
+ <param name="dataInicio"></param>
+ <param name="dataFim"></param>
+ <param name="tipo"></param>
+ <param name="totalizador">Q = totaliza quantidade, V= totaliza Valor</param>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.VendaModel.nroCartao">
+ <summary>
+ obtem apenas o numero que determina a mesa/balcao ou nro de entrega do campo composto udata.cartao(property cartao)
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.VendaModel.tipo">
+ <summary>
+ B = BALCÃO
+ C = CALLCENTER
+ E = ENTREGA
+ M = MESA/CARTAO
+ W = WEB
+ Z = CUPOM AVULSO
+ R = REDUTOR (Utilizado para registros onde foi realizado a compactação da base de dados UDATA, RDATA e PDATA)
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.VendaModel.relat">
+ <summary>
+ TIPO RECEBIMENTO VENDA
+ V = VISTA
+ F = A PRAZO(FIADO)
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:modelOffice.VendaModel.numero">
+ <summary>
+ Numero de pessoas
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.vendasCaixaPedido.retornaVendasPeriodo(System.String,System.String,System.String,System.String,System.Boolean,System.String)">
+ <summary>
+ Retornar total de venda agrupado por Perido
+ </summary>
+ <param name="dataInicio"></param>
+ <param name="dataFim"></param>
+ <param name="tipo"></param>
+ <param name="totalizador">Q = totaliza quantidade, V= totaliza Valor</param>
+ <param name="agruparPorLojas">Agrupar vendas por lojas</param>
+ <param name="tipoVenda">A= Ambos, C=vendas caixa, P=vendas Pedido</param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.vendasCaixaPedido.VendasPeriodoGrafico(System.Collections.Generic.List{modelOffice.vendaPeriodo},System.String,System.Collections.Generic.List{modelOffice.EmpresaModel},System.String)">
+ <summary>
+ Retorna objeto formatado para gerar o grafico de vendas
+ </summary>
+ <param name="vendas"></param>
+ <param name="totalizador">Q= quantidade, V= Valor</param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.vendasCaixaPedido.retornaVendasProdutos(System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ Retorna produtos vendidos agrupados por dia ou mês
+ </summary>
+ <param name="dataInicio"></param>
+ <param name="dataFim"></param>
+ <param name="tipo"></param>
+ <param name="totalizador"></param>
+ <param name="produtos"></param>
+ <param name="tipoVenda">A= Ambos, C=vendas caixa, P=vendas Pedido</param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.vendasCaixaPedido.vendasProdutosGrafico(System.Collections.Generic.List{modelOffice.Lista},System.String,System.String)">
+ <summary>
+ Retorna objeto  de vendas de produtos formatados para grafico.
+ </summary>
+ <param name="totalizador">Q = quantidade, V= Valor</param>
+ <param name="tipo">D= Diário, M= Mensal</param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.vendasCaixaPedido.ProdutosQueNaoVendemXdias(System.UInt32,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="dias">quant. de dias que não vendem </param>
+ <param name="tipovenda">A=Ambos, C=Caixa, P=Pedido</param>
+ <returns></returns>
+</member>
+<member name="M:modelOffice.VendasPrazo.selecionaVendasPrazo(System.Int32,System.String[],System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="codCliente"></param>
+ <param name="caixas"></param>
+ <param name="dataInicio"></param>
+ <param name="datafinal"></param>
+ <param name="filtroStatus">P=Pago, N=Não Pago, ''= Ambos </param>
+ <returns></returns>
+</member>
+</members>
+</doc>
