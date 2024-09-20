@@ -1,0 +1,101 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CloudService
+</name>
+</assembly>
+<members>
+<member name="T:CloudService.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CloudService.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CloudService.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:CloudService.My.Resources.Resources.attention_cloud">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CloudService.My.Resources.Resources.close">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CloudService.My.Resources.Resources.cloud">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CloudService.My.Resources.Resources.config">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CloudService.My.Resources.Resources.delete_cloud">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CloudService.My.Resources.Resources.download_from_cloud">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CloudService.My.Resources.Resources.gear">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CloudService.My.Resources.Resources.load_from_cloud">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CloudService.My.Resources.Resources.recycle">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CloudService.My.Resources.Resources.refresh_cloud">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CloudService.My.Resources.Resources.upload_to_cloud">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="M:CloudService.FrmConfiguracao.BtnSalvar_Click(System.Object,System.EventArgs)">
+Faz chamada à função: <see cref="M:CloudService.Rotina.CriarBancoNuvem"/> e a executa em segundo plano.
+</member>
+<member name="M:CloudService.FrmConfiguracao.Btn_Click(System.Object,System.EventArgs)">
+Faz chamada à função em segundo plano: 
+<see cref="M:CloudService.Rotina.RestaurarDadosLoja"> BtnRestaurarBD </see>.
+<see cref="M:CloudService.Rotina.ResetNuvem"> BtnZerar </see>.
+</member>
+<member name="M:CloudService.BaseTable.Insere(System.String@,System.String)">
+ <summary>
+ Insere registros e retorna o último ID da tabela
+ </summary>
+ <param name="query">Comandos de inserção no banco</param>
+</member>
+<member name="M:CloudService.Rotina.timeRotina_Tick(System.Object,System.EventArgs)">
+<see cref="M:CloudService.Rotina.SincronizarLojaNuvem"/>
+</member>
+<member name="T:CloudService.WCliente">
+ SubClasses
+</member>
+</members>
+</doc>
